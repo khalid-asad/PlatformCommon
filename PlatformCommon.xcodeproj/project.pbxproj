@@ -14,6 +14,8 @@
 		1927343224E628BD002BCE36 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927343124E628BD002BCE36 /* Date+Extensions.swift */; };
 		1927343424E628D1002BCE36 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927343324E628D1002BCE36 /* Double+Extensions.swift */; };
 		1927343624E628EF002BCE36 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927343524E628EF002BCE36 /* String+Extensions.swift */; };
+		19748BE324E6314600EA2499 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19748BE224E6314600EA2499 /* UIColor+Extensions.swift */; };
+		19748BE624E63A1900EA2499 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19748BE524E63A1900EA2499 /* Color.swift */; };
 		30F0B3EC22C1A23B004673A2 /* PlatformCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F0B3E222C1A23B004673A2 /* PlatformCommon.framework */; };
 		30F0B3F122C1A23B004673A2 /* PlatformCommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F0B3F022C1A23B004673A2 /* PlatformCommonTests.swift */; };
 		30F0B3F322C1A23B004673A2 /* PlatformCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 30F0B3E522C1A23B004673A2 /* PlatformCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +42,8 @@
 		1927343124E628BD002BCE36 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		1927343324E628D1002BCE36 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		1927343524E628EF002BCE36 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		19748BE224E6314600EA2499 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		19748BE524E63A1900EA2499 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		30F0B3E222C1A23B004673A2 /* PlatformCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlatformCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F0B3E522C1A23B004673A2 /* PlatformCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformCommon.h; sourceTree = "<group>"; };
 		30F0B3E622C1A23B004673A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +83,14 @@
 			path = Errors;
 			sourceTree = "<group>";
 		};
+		19748BE424E63A0E00EA2499 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				19748BE524E63A1900EA2499 /* Color.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		30F0B3D822C1A23B004673A2 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +112,7 @@
 		30F0B3E422C1A23B004673A2 /* PlatformCommon */ = {
 			isa = PBXGroup;
 			children = (
+				19748BE424E63A0E00EA2499 /* Colors */,
 				1927342824E627BE002BCE36 /* Errors */,
 				30F0B3FC22C1A2FB004673A2 /* Extensions */,
 				30F0B3FE22C1A2FB004673A2 /* Networking */,
@@ -127,6 +140,7 @@
 				1927343124E628BD002BCE36 /* Date+Extensions.swift */,
 				1927343324E628D1002BCE36 /* Double+Extensions.swift */,
 				1927343524E628EF002BCE36 /* String+Extensions.swift */,
+				19748BE224E6314600EA2499 /* UIColor+Extensions.swift */,
 				30F0B3FD22C1A2FB004673A2 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
@@ -263,9 +277,11 @@
 				1927343224E628BD002BCE36 /* Date+Extensions.swift in Sources */,
 				1927343024E628A5002BCE36 /* Data+Extensions.swift in Sources */,
 				1927343424E628D1002BCE36 /* Double+Extensions.swift in Sources */,
+				19748BE624E63A1900EA2499 /* Color.swift in Sources */,
 				1927342E24E62882002BCE36 /* Array+Extensions.swift in Sources */,
 				30F0B40322C1A2FB004673A2 /* NetworkRequest.swift in Sources */,
 				1927342A24E627CC002BCE36 /* NetworkErrors.swift in Sources */,
+				19748BE324E6314600EA2499 /* UIColor+Extensions.swift in Sources */,
 				30F0B40222C1A2FB004673A2 /* UIView+Extensions.swift in Sources */,
 				30F0B40422C1A2FB004673A2 /* UIConfigureable.swift in Sources */,
 			);
