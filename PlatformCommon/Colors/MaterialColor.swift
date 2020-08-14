@@ -8,7 +8,8 @@
 
 import class UIKit.UIColor
 
-/// Based on the 2014 Material Design Color Palette from Google.
+/// Based on Material Design Color subscripting in Flutter and Dart from Google.
+/// Uses on the 2014 Material Design Color Palette from Google.
 /// https://material.io/design/color/the-color-system.html#tools-for-picking-colors
 public enum MaterialColor {
     case red
@@ -107,6 +108,40 @@ public enum MaterialColor {
             case .a200: return #colorLiteral(red: 0.8784, green: 0.251, blue: 0.9843, alpha: 1) /* #e040fb */
             case .a400: return #colorLiteral(red: 0.8353, green: 0, blue: 0.9765, alpha: 1) /* #d500f9 */
             case .a700: return #colorLiteral(red: 0.6667, green: 0, blue: 1, alpha: 1) /* #aa00ff */
+            }
+        case .deepPurple:
+            switch index {
+            case .o50:  return #colorLiteral(red: 0.9294, green: 0.9059, blue: 0.9647, alpha: 1) /* #ede7f6 */
+            case .o100: return #colorLiteral(red: 0.8196, green: 0.7686, blue: 0.9137, alpha: 1) /* #d1c4e9 */
+            case .o200: return #colorLiteral(red: 0.702, green: 0.6157, blue: 0.8588, alpha: 1) /* #b39ddb */
+            case .o300: return #colorLiteral(red: 0.5843, green: 0.4588, blue: 0.8039, alpha: 1) /* #9575cd */
+            case .o400: return #colorLiteral(red: 0.4941, green: 0.3412, blue: 0.7608, alpha: 1) /* #7e57c2 */
+            case .o500: return #colorLiteral(red: 0.4039, green: 0.2275, blue: 0.7176, alpha: 1) /* #673ab7 */
+            case .o600: return #colorLiteral(red: 0.3686, green: 0.2078, blue: 0.6941, alpha: 1) /* #5e35b1 */
+            case .o700: return #colorLiteral(red: 0.3176, green: 0.1765, blue: 0.6588, alpha: 1) /* #512da8 */
+            case .o800: return #colorLiteral(red: 0.2706, green: 0.1529, blue: 0.6275, alpha: 1) /* #4527a0 */
+            case .o900: return #colorLiteral(red: 0.1922, green: 0.1059, blue: 0.5725, alpha: 1) /* #311b92 */
+            case .a100: return #colorLiteral(red: 0.702, green: 0.5333, blue: 1, alpha: 1) /* #b388ff */
+            case .a200: return #colorLiteral(red: 0.4863, green: 0.302, blue: 1, alpha: 1) /* #7c4dff */
+            case .a400: return #colorLiteral(red: 0.3961, green: 0.1216, blue: 1, alpha: 1) /* #651fff */
+            case .a700: return #colorLiteral(red: 0.3843, green: 0, blue: 0.9176, alpha: 1) /* #6200ea */
+            }
+        case .indigo:
+            switch index {
+            case .o50:  return #colorLiteral(red: 0.9098, green: 0.9176, blue: 0.9647, alpha: 1) /* #e8eaf6 */
+            case .o100: return #colorLiteral(red: 0.7725, green: 0.7922, blue: 0.9137, alpha: 1) /* #c5cae9 */
+            case .o200: return #colorLiteral(red: 0.6235, green: 0.6588, blue: 0.8549, alpha: 1) /* #9fa8da */
+            case .o300: return #colorLiteral(red: 0.4745, green: 0.5255, blue: 0.7961, alpha: 1) /* #7986cb */
+            case .o400: return #colorLiteral(red: 0.3608, green: 0.4196, blue: 0.7529, alpha: 1) /* #5c6bc0 */
+            case .o500: return #colorLiteral(red: 0.2471, green: 0.3176, blue: 0.7098, alpha: 1) /* #3f51b5 */
+            case .o600: return #colorLiteral(red: 0.2235, green: 0.2863, blue: 0.6706, alpha: 1) /* #3949ab */
+            case .o700: return #colorLiteral(red: 0.1882, green: 0.2471, blue: 0.6235, alpha: 1) /* #303f9f */
+            case .o800: return #colorLiteral(red: 0.1569, green: 0.2078, blue: 0.5765, alpha: 1) /* #283593 */
+            case .o900: return #colorLiteral(red: 0.102, green: 0.1373, blue: 0.4941, alpha: 1) /* #1a237e */
+            case .a100: return #colorLiteral(red: 0.549, green: 0.6196, blue: 1, alpha: 1) /* #8c9eff */
+            case .a200: return #colorLiteral(red: 0.3255, green: 0.4275, blue: 0.9961, alpha: 1) /* #536dfe */
+            case .a400: return #colorLiteral(red: 0.2392, green: 0.3529, blue: 0.9961, alpha: 1) /* #3d5afe */
+            case .a700: return #colorLiteral(red: 0.1882, green: 0.3098, blue: 0.9961, alpha: 1) /* #304ffe */
             }
         default:
             return .white
