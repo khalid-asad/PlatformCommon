@@ -33,7 +33,7 @@ public enum Color {
     case black
     case white
     
-    subscript(_ index: Int, default defaultValue: Int) -> UIColor? {
+    public subscript(_ index: Int, default defaultValue: Int) -> UIColor? {
         get {
             switch self {
             case .red:
