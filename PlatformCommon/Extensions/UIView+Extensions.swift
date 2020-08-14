@@ -6,7 +6,6 @@
 //  Copyright © 2019 Khalid Asad. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 public extension UIView {
