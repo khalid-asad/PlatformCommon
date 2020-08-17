@@ -33,7 +33,8 @@ public enum MaterialColor {
     case blueGray
     case black
     case white
-        
+    
+    /// Index of two range groups of O and A.
     public enum MaterialColorIndex {
         case o50
         case o100

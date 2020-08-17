@@ -9,48 +9,53 @@
 import Foundation
 import UIKit
 
+/// The state of the network request fetching.
 public enum FetchInfoState {
     case fetching
     case success
     case failure
 }
 
+/// The manager of Network Requests in an application.
 public final class NetworkRequest {
     
-    public static func fetchData<T>(_ type: T.Type, for url: URL?, completionHandler: @escaping (T?, Error?) -> Void) where T : Decodable {
+    /// Handles a network request of any response type.
+    /// - parameter session: The URL Session mocked or singleton object.
+    /// - parameter url: The URL to initiate the network request from.
+    /// - parameter completion: Callback that returns a Result with a response type indicated if successful, otherwise an error.
+    public func fetchData<T: Decodable>(with session: URLSession = URLSession.shared, for url: URL?, completion: @escaping (Result<T, Error>) -> Void) {
         guard let url = url else {
-            completionHandler(nil, nil)
-            return
+            return completion(.failure(NetworkError.invalidURL))
         }
-        URLSession.shared.dataTask(with: url) { (data, _, error) in
-            guard let data = data else { return }
-            print("Data: ")
-            print(data)
+        session.dataTask(with: url) { (data, _, error) in
+            if let error = error { return completion(.failure(error)) }
+            guard let data = data else { return completion(.failure(NetworkError.noData)) }
+            print("Data: \(data)")
             do {
                 let decoder = JSONDecoder()
                 let responseData = try decoder.decode(T.self, from: data)
                 dump(responseData)
-                print(responseData)
-                completionHandler(responseData, nil)
-            } catch let err {
-                print("Err", err)
-                completionHandler(nil, error)
+                completion(.success(responseData))
+            } catch {
+                print("Err", error)
+                completion(.failure(error))
             }
-            }.resume()
+        }.resume()
     }
     
-    public static func downloadImage(inputURL: URL?, completion: @escaping(Bool, UIImage?) -> Void) {
-        guard let url = inputURL else { return }
+    /// Handles a image download.
+    /// - parameter session: The URL Session mocked or singleton object.
+    /// - parameter url: The URL to initiate the network request from.
+    /// - parameter completion: Callback that returns a Result with an image if successful, otherwise an error.
+    public func downloadImage(with session: URLSession = URLSession.shared, url: URL?, completion: @escaping (Result<UIImage, Error>) -> Void) {
+        guard let url = url else { return completion(.failure(NetworkError.invalidURL)) }
         let request = URLRequest(url: url)
-        let session = URLSession.shared
-        
-        let task = session.dataTask(with: request) { (data, _, _) in
+        session.dataTask(with: request) { (data, _, error) in
+            if let error = error { return completion(.failure(error)) }
             guard let data = data, let image = UIImage(data: data) else {
-                completion (false, nil)
-                return
+                return completion(.failure(NetworkError.noData))
             }
-            completion(true, image)
-        }
-        task.resume()
+            completion(.success(image))
+        }.resume()
     }
 }

@@ -19,6 +19,7 @@ public enum NetworkError: CustomError, Equatable {
     case unableToDecodeJSON
     case unauthorized
     
+    /// The user friendly error message.
     public var message: String {
         switch self {
         case .emptyResponse:
@@ -41,15 +42,6 @@ public enum NetworkError: CustomError, Equatable {
             return "Unable to decode the JSON response."
         case .unauthorized:
             return "This user is not authorized."
-        }
-    }
-    
-    /// The status code of the TMDb API.
-    public var statusCode: Int? {
-        switch self {
-        case .invalidAPIKey: return 7
-        case .notFound: return 34
-        default: return nil
         }
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// An error unique to TMDb.
+/// An error unique to an application.
 public protocol CustomError: LocalizedError {
     
     /// The readable error message.

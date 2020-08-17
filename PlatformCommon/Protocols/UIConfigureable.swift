@@ -9,8 +9,11 @@
 import Foundation
 import UIKit
 
+/// Handles configurations of a UI Text based elements.
 public protocol UITextConfigureable {
     
+    /// Configures the UI Text.
+    /// - parameter text: If this is nil, hide the element, otherwise set the text.
     func configure(text: String?)
 }
 
@@ -20,7 +23,7 @@ extension UILabel: UITextConfigureable {
         if let text = text {
             self.text = text
         } else {
-            self.isHidden = true
+            isHidden = true
         }
     }
 }
