@@ -23,7 +23,7 @@ public final class NetworkRequest {
     /// - parameter session: The URL Session mocked or singleton object.
     /// - parameter url: The URL to initiate the network request from.
     /// - parameter completion: Callback that returns a Result with a response type indicated if successful, otherwise an error.
-    public func fetchData<T: Decodable>(with session: URLSession = URLSession.shared, for url: URL?, completion: @escaping (Result<T, Error>) -> Void) {
+    public func fetchData<T: Decodable>(with session: URLSession = .shared, for url: URL?, completion: @escaping (Result<T, Error>) -> Void) {
         guard let url = url else {
             return completion(.failure(NetworkError.invalidURL))
         }
@@ -47,7 +47,7 @@ public final class NetworkRequest {
     /// - parameter session: The URL Session mocked or singleton object.
     /// - parameter url: The URL to initiate the network request from.
     /// - parameter completion: Callback that returns a Result with an image if successful, otherwise an error.
-    public func downloadImage(with session: URLSession = URLSession.shared, url: URL?, completion: @escaping (Result<UIImage, Error>) -> Void) {
+    public func downloadImage(with session: URLSession = .shared, url: URL?, completion: @escaping (Result<UIImage, Error>) -> Void) {
         guard let url = url else { return completion(.failure(NetworkError.invalidURL)) }
         let request = URLRequest(url: url)
         session.dataTask(with: request) { (data, _, error) in

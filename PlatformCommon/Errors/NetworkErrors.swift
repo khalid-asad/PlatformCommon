@@ -10,6 +10,7 @@
 public enum NetworkError: CustomError, Equatable {
     case emptyResponse
     case invalidAPIKey
+    case invalidHTTPResponse
     case invalidJSONResponse
     case invalidURL
     case noData
@@ -18,6 +19,7 @@ public enum NetworkError: CustomError, Equatable {
     case other(String, Int)
     case unableToDecodeJSON
     case unauthorized
+    case unknown
     
     /// The user friendly error message.
     public var message: String {
@@ -26,6 +28,8 @@ public enum NetworkError: CustomError, Equatable {
             return "The response is nil or empty."
         case .invalidAPIKey:
             return "Invalid API key: You must be granted a valid key."
+        case .invalidHTTPResponse:
+            return "The HTTP URL Response was invalid."
         case .invalidJSONResponse:
             return "The JSON Response was invalid."
         case .invalidURL:
@@ -42,6 +46,8 @@ public enum NetworkError: CustomError, Equatable {
             return "Unable to decode the JSON response."
         case .unauthorized:
             return "This user is not authorized."
+        case .unknown:
+            return "An Unknown error occurred."
         }
     }
 }
