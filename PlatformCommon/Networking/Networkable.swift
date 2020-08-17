@@ -1,5 +1,5 @@
 //
-//  NetworkWrappable.swift
+//  Networkable.swift
 //  PlatformCommon
 //
 //  Created by Khalid Asad on 8/16/20.
