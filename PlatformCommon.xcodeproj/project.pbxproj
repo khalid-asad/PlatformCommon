@@ -23,6 +23,7 @@
 		197B2F2824EA1AAB007B73AC /* Emailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B2F2724EA1AAB007B73AC /* Emailable.swift */; };
 		197B2F2A24EA1CD4007B73AC /* EmailApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B2F2924EA1CD4007B73AC /* EmailApplication.swift */; };
 		197B2F2C24EA1F68007B73AC /* EmailErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B2F2B24EA1F68007B73AC /* EmailErrors.swift */; };
+		197B2F2E24EEFC3E007B73AC /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B2F2D24EEFC3D007B73AC /* Dictionary+Extensions.swift */; };
 		30F0B3EC22C1A23B004673A2 /* PlatformCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F0B3E222C1A23B004673A2 /* PlatformCommon.framework */; };
 		30F0B3F122C1A23B004673A2 /* PlatformCommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F0B3F022C1A23B004673A2 /* PlatformCommonTests.swift */; };
 		30F0B3F322C1A23B004673A2 /* PlatformCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 30F0B3E522C1A23B004673A2 /* PlatformCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -58,6 +59,7 @@
 		197B2F2724EA1AAB007B73AC /* Emailable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emailable.swift; sourceTree = "<group>"; };
 		197B2F2924EA1CD4007B73AC /* EmailApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailApplication.swift; sourceTree = "<group>"; };
 		197B2F2B24EA1F68007B73AC /* EmailErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailErrors.swift; sourceTree = "<group>"; };
+		197B2F2D24EEFC3D007B73AC /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
 		30F0B3E222C1A23B004673A2 /* PlatformCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlatformCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F0B3E522C1A23B004673A2 /* PlatformCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformCommon.h; sourceTree = "<group>"; };
 		30F0B3E622C1A23B004673A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				1927342D24E62882002BCE36 /* Array+Extensions.swift */,
 				1927342F24E628A5002BCE36 /* Data+Extensions.swift */,
 				1927343124E628BD002BCE36 /* Date+Extensions.swift */,
+				197B2F2D24EEFC3D007B73AC /* Dictionary+Extensions.swift */,
 				197B2F2424EA1569007B73AC /* DispatchQueue+Extensions.swift */,
 				1927343324E628D1002BCE36 /* Double+Extensions.swift */,
 				1927343524E628EF002BCE36 /* String+Extensions.swift */,
@@ -316,6 +319,7 @@
 				197B2F2824EA1AAB007B73AC /* Emailable.swift in Sources */,
 				1927343024E628A5002BCE36 /* Data+Extensions.swift in Sources */,
 				197B2F2C24EA1F68007B73AC /* EmailErrors.swift in Sources */,
+				197B2F2E24EEFC3E007B73AC /* Dictionary+Extensions.swift in Sources */,
 				197B2F2124EA06AD007B73AC /* NetworkRequestType.swift in Sources */,
 				1927343424E628D1002BCE36 /* Double+Extensions.swift in Sources */,
 				19748BE624E63A1900EA2499 /* MaterialColor.swift in Sources */,
