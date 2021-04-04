@@ -111,4 +111,24 @@ public extension Networkable {
             }.resume()
         }
     }
+    
+    /// Handles a network request of any response type.
+    /// - parameter session: The URL Session mocked or singleton object.
+    /// - parameter completion: Callback that returns Data with a response type indicated if successful, otherwise an error.
+    func fetchRawData(session: URLSession = .shared, completion: @escaping (Result<Data, NetworkError>) -> Void) {
+        guard let request = request else { return completion(.failure(.invalidURL)) }
+        DispatchQueue.network.async {
+            session.dataTask(with: request) { (data, response, error) in
+                do {
+                    guard let httpURLResponse = response as? HTTPURLResponse,
+                        200...299 ~= httpURLResponse.statusCode
+                    else { throw NetworkError.invalidHTTPResponse }
+                    guard let data = data else { throw NetworkError.noData }
+                    DispatchQueue.main.async { completion(.success(data)) }
+                } catch {
+                    DispatchQueue.main.async { completion(.failure(error as? NetworkError ?? .unknown)) }
+                }
+            }.resume()
+        }
+    }
 }

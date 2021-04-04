@@ -24,9 +24,7 @@ public final class NetworkRequest {
     /// - parameter url: The URL to initiate the network request from.
     /// - parameter completion: Callback that returns a Result with a response type indicated if successful, otherwise an error.
     public func fetchData<T: Decodable>(with session: URLSession = .shared, for url: URL?, completion: @escaping (Result<T, Error>) -> Void) {
-        guard let url = url else {
-            return completion(.failure(NetworkError.invalidURL))
-        }
+        guard let url = url else { return completion(.failure(NetworkError.invalidURL)) }
         session.dataTask(with: url) { (data, _, error) in
             if let error = error { return completion(.failure(error)) }
             guard let data = data else { return completion(.failure(NetworkError.noData)) }
