@@ -14,6 +14,8 @@
 		1927343224E628BD002BCE36 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927343124E628BD002BCE36 /* Date+Extensions.swift */; };
 		1927343424E628D1002BCE36 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927343324E628D1002BCE36 /* Double+Extensions.swift */; };
 		1927343624E628EF002BCE36 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1927343524E628EF002BCE36 /* String+Extensions.swift */; };
+		19595D3426198B6400290295 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19595D3326198B6400290295 /* UILabel+Extensions.swift */; };
+		19595D3626198B8200290295 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19595D3526198B8200290295 /* UIStackView+Extensions.swift */; };
 		19748BE324E6314600EA2499 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19748BE224E6314600EA2499 /* UIColor+Extensions.swift */; };
 		19748BE624E63A1900EA2499 /* MaterialColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19748BE524E63A1900EA2499 /* MaterialColor.swift */; };
 		197B2F1F24EA041D007B73AC /* Accessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B2F1E24EA041D007B73AC /* Accessible.swift */; };
@@ -52,6 +54,8 @@
 		1927343124E628BD002BCE36 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		1927343324E628D1002BCE36 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		1927343524E628EF002BCE36 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		19595D3326198B6400290295 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		19595D3526198B8200290295 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 		19748BE224E6314600EA2499 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		19748BE524E63A1900EA2499 /* MaterialColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialColor.swift; sourceTree = "<group>"; };
 		197B2F1E24EA041D007B73AC /* Accessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessible.swift; sourceTree = "<group>"; };
@@ -185,7 +189,9 @@
 				197B2F2F24EF8203007B73AC /* Encodable+Extensions.swift */,
 				1927343524E628EF002BCE36 /* String+Extensions.swift */,
 				19748BE224E6314600EA2499 /* UIColor+Extensions.swift */,
+				19595D3326198B6400290295 /* UILabel+Extensions.swift */,
 				30F0B3FD22C1A2FB004673A2 /* UIView+Extensions.swift */,
+				19595D3526198B8200290295 /* UIStackView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -320,12 +326,14 @@
 			files = (
 				1927343624E628EF002BCE36 /* String+Extensions.swift in Sources */,
 				197B2F2A24EA1CD4007B73AC /* EmailApplication.swift in Sources */,
+				19595D3426198B6400290295 /* UILabel+Extensions.swift in Sources */,
 				1927342C24E6281A002BCE36 /* CustomError.swift in Sources */,
 				1927343224E628BD002BCE36 /* Date+Extensions.swift in Sources */,
 				197B2F3224EF82E2007B73AC /* JSONError.swift in Sources */,
 				197B2F2824EA1AAB007B73AC /* Emailable.swift in Sources */,
 				1927343024E628A5002BCE36 /* Data+Extensions.swift in Sources */,
 				197B2F2C24EA1F68007B73AC /* EmailErrors.swift in Sources */,
+				19595D3626198B8200290295 /* UIStackView+Extensions.swift in Sources */,
 				197B2F3024EF8203007B73AC /* Encodable+Extensions.swift in Sources */,
 				197B2F2E24EEFC3E007B73AC /* Dictionary+Extensions.swift in Sources */,
 				197B2F2124EA06AD007B73AC /* NetworkRequestType.swift in Sources */,
