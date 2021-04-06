@@ -31,6 +31,7 @@
 		197B2F2E24EEFC3E007B73AC /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B2F2D24EEFC3D007B73AC /* Dictionary+Extensions.swift */; };
 		197B2F3024EF8203007B73AC /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B2F2F24EF8203007B73AC /* Encodable+Extensions.swift */; };
 		197B2F3224EF82E2007B73AC /* JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197B2F3124EF82E2007B73AC /* JSONError.swift */; };
+		1994A142261BDD6700FE1D52 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1994A141261BDD6700FE1D52 /* UITableView+Extensions.swift */; };
 		30F0B3EC22C1A23B004673A2 /* PlatformCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F0B3E222C1A23B004673A2 /* PlatformCommon.framework */; };
 		30F0B3F122C1A23B004673A2 /* PlatformCommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F0B3F022C1A23B004673A2 /* PlatformCommonTests.swift */; };
 		30F0B3F322C1A23B004673A2 /* PlatformCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 30F0B3E522C1A23B004673A2 /* PlatformCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -74,6 +75,7 @@
 		197B2F2D24EEFC3D007B73AC /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
 		197B2F2F24EF8203007B73AC /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
 		197B2F3124EF82E2007B73AC /* JSONError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONError.swift; sourceTree = "<group>"; };
+		1994A141261BDD6700FE1D52 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		30F0B3E222C1A23B004673A2 /* PlatformCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlatformCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F0B3E522C1A23B004673A2 /* PlatformCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformCommon.h; sourceTree = "<group>"; };
 		30F0B3E622C1A23B004673A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -198,8 +200,9 @@
 				19748BE224E6314600EA2499 /* UIColor+Extensions.swift */,
 				19595D37261A374100290295 /* UIImageView+Extensions.swift */,
 				19595D3326198B6400290295 /* UILabel+Extensions.swift */,
-				30F0B3FD22C1A2FB004673A2 /* UIView+Extensions.swift */,
 				19595D3526198B8200290295 /* UIStackView+Extensions.swift */,
+				1994A141261BDD6700FE1D52 /* UITableView+Extensions.swift */,
+				30F0B3FD22C1A2FB004673A2 /* UIView+Extensions.swift */,
 				195713B1261AB603009A071C /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
@@ -348,6 +351,7 @@
 				197B2F2E24EEFC3E007B73AC /* Dictionary+Extensions.swift in Sources */,
 				197B2F2124EA06AD007B73AC /* NetworkRequestType.swift in Sources */,
 				1927343424E628D1002BCE36 /* Double+Extensions.swift in Sources */,
+				1994A142261BDD6700FE1D52 /* UITableView+Extensions.swift in Sources */,
 				19595D3A261A37E200290295 /* NSMutableAttributedString+Extensions.swift in Sources */,
 				19748BE624E63A1900EA2499 /* MaterialColor.swift in Sources */,
 				1927342E24E62882002BCE36 /* Array+Extensions.swift in Sources */,
